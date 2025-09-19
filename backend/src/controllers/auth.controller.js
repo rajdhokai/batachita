@@ -1,9 +1,13 @@
-import { generateToken } from "../lib/utils.js";
 import bcrypt from "bcryptjs";
 import User from "../models/User.js";
 
+import { ENV } from "../lib/env.js";
+import { generateToken } from "../lib/utils.js";
+import { sendWelcomEmail } from "../emails/emailHandlers.js";
+
 export const signup = async (req, res) => {
   const { fullName, email, password } = req.body;
+
   try {
     if (!fullName || !email || !password) {
       return res.status(400).json({ message: "All fields are required" });
@@ -42,8 +46,18 @@ export const signup = async (req, res) => {
         fullName: newUser.fullName,
         email: newUser.email,
         profilePic: newUser.profilePic,
-        createdAt: newUser.createdAt,
       });
+
+      // send a welcome email to the user
+      try {
+        await sendWelcomEmail(
+          savedUser.email,
+          savedUser.fullName,
+          ENV.CLIENT_URL
+        );
+      } catch (error) {
+        console.error("Failed to send welcome email:", error);
+      }
     } else {
       return res.status(400).json({ message: "Invalid user data" });
     }
