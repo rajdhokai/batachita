@@ -23,7 +23,6 @@ It’s lightweight, modern, and designed to bring seamless communication between
 - **Real-time**: Socket.IO  
 - **Auth**: JWT & Cookies  
 
----
 
 ## ⚡ Getting Started
 
