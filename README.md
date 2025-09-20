@@ -1,12 +1,9 @@
 
 
-````markdown
 # 💬 BataChita
 
 🚀 **BataChita** is a real-time chat application built using the **MERN Stack (MongoDB, Express.js, React, Node.js)** with **Socket.IO** for instant messaging.  
 It’s lightweight, modern, and designed to bring seamless communication between users.  
-
----
 
 ## ✨ Features
 
@@ -17,7 +14,6 @@ It’s lightweight, modern, and designed to bring seamless communication between
 - 📷 Media sharing (images, files, emojis)  
 - 🎨 Modern UI with responsive design  
 
----
 
 ## 🛠️ Tech Stack
 
@@ -77,33 +73,20 @@ Frontend:
 npm run dev
 ```
 
----
-
-## 📸 Screenshots (Optional)
-
-> Add some UI screenshots here once the frontend is ready.
-
----
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 Feel free to fork this repo and submit a PR.
 
----
 
 ## 📜 License
 
 This project is licensed under the **MIT License**.
 
----
 
 ## 👨‍💻 Author
 
-* *codebuster**
+* **codebustr**
   
 
-```
-
----
 
