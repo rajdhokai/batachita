@@ -28,7 +28,7 @@ It’s lightweight, modern, and designed to bring seamless communication between
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/batachita.git
+git clone https://github.com/rajdhokai/batachita.git
 cd batachita
 ````
 
