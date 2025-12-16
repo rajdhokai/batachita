@@ -12,8 +12,10 @@
   "dependencies": {
     "axios": "^1.12.2",
     "bata-chita": "file:..",
+    "lucide-react": "^0.544.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "react-hot-toast": "^2.6.0",
     "react-router": "^7.9.3",
     "zustand": "^5.0.3"
   },
@@ -23,6 +25,7 @@
     "@types/react-dom": "^19.1.9",
     "@vitejs/plugin-react": "^5.0.2",
     "autoprefixer": "^10.4.21",
+    "baseline-browser-mapping": "^2.9.7",
     "daisyui": "^4.12.24",
     "eslint": "^9.35.0",
     "eslint-plugin-react-hooks": "^5.2.0",
